@@ -20,8 +20,6 @@ The infrastructure consists of 4 managed nodes and segmented IoT devices:
 | **Zeyad_laptop** | Windows 11 | Primary Administrative Workstation & Endpoint. |
 | **macbookpro** | macOS (Unix) | Development & Creative Workstation. |
 
-> **Network Security Note:** All IoT devices are isolated in a separate **VLAN/Subnet** to implement Zero Trust principles and protect critical infrastructure.
-
 ## Technologies Stack
 * **Monitoring Engine:** Netdata (Deployed via Docker, Native Agents, & Homebrew).
 * **Security:** Wazuh SIEM (Endpoint Security & Log Analysis).
