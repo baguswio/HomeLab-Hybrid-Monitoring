@@ -1,21 +1,20 @@
 # Hybrid Infrastructure Observability & Security Lab
 
-
 ## Project Overview
 This project demonstrates the implementation of a **Unified Monitoring & Incident Response System** for a complex, hybrid home lab environment. By integrating **Netdata** with **Wazuh SIEM**, I established a central "Single Pane of Glass" to monitor the health, performance, and security of diverse operating systems (Linux, Windows, macOS) and containerized applications.
 
 The goal was to move from reactive troubleshooting to **proactive observability**, reducing Mean Time to Detect (MTTD) for both performance anomalies and security threats.
 
-## Dashboard Preview
+## 📸 Dashboard Preview
 ![Dashboard Overview](dashboard-overview.png)
-*Real-time visibility across 4 critical nodes: Linux Server (Wazuh-Server), Raspberry Pi (Home-Server), Windows 11, and macOS.*
+*Real-time visibility across 4 critical nodes: Linux Server, Raspberry Pi, Windows 11, and macOS.*
 
 ## Architecture Topology
 The infrastructure consists of 4 managed nodes:
 
 | Node Name | OS / Type | Role |
 | :--- | :--- | :--- |
-**Home-Server** | Ubuntu Server (Raspberry Pi) + CasaOS | **Docker Host** running core services (Pi-hole, NAS) & Containerized Monitoring. |
+| **Home-Server** | Ubuntu Server (Raspberry Pi) + CasaOS | **Docker Host** running core services (Pi-hole, NAS, Immich) & Containerized Monitoring. |
 | **Wazuh-Server** | Ubuntu Server (VM) | Dedicated **SIEM Manager** for log analysis and threat detection. |
 | **Zeyad_laptop** | Windows 11 | Primary Administrative Workstation & Endpoint. |
 | **macbookpro** | macOS (Unix) | Development & Creative Workstation. |
@@ -25,6 +24,12 @@ The infrastructure consists of 4 managed nodes:
 * **Security:** Wazuh SIEM (Endpoint Security & Log Analysis).
 * **Containerization:** Docker & Docker Compose.
 * **Alerting:** Automated integration with **Telegram API** for critical notifications.
+
+## Automated Alerting System
+Critical events trigger instant notifications via a custom **Telegram Bot**, ensuring rapid incident response capabilities (IR).
+
+![Telegram Alert Example](telegram-alert.png)
+*Example of real-time alerts received on mobile, including a critical health check failure on the Immich database container.*
 
 ## Implementation Highlights & Challenges
 
