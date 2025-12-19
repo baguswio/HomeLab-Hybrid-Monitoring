@@ -42,9 +42,5 @@ I resolved the dependency at the environment level by upgrading the local shell 
 ### 3. Resource Optimization
 Tuned monitoring agents to consume **<1% CPU** on the Wazuh Server to ensure that the observability layer does not impact the performance of the SIEM engine.
 
-## Future Roadmap
-* **Red Teaming:** Conducting attack simulations using **Atomic Red Team** to test Wazuh's detection capabilities.
-* **Active Directory:** Deploying a Windows Server Domain Controller and hydrating it with **BadBlood** to practice Identity Security monitoring.
-
 ---
 **Project executed by [Zeyad AlRashed](https://www.linkedin.com/in/zeyad-alrashed-0155b9333/)**
